@@ -14,7 +14,6 @@ class UserModel extends Model{
 	protected $tableName = "user_info";
 	protected $trueTableName = 'j_user_info'; 
 	protected $_map = array(
-
         'userid' =>'j_user_id', 
         'userphone'  =>'j_user_phone', 
         'userstate' =>'j_user_state',
@@ -25,7 +24,7 @@ class UserModel extends Model{
 	public function queryUser($phone,$pwd){
 		
 		$map["j_user_phone"] = $phone;
-	
+		
 		return $this->where($map)->select();
 		
 	}

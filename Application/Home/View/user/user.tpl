@@ -31,7 +31,11 @@ body{
         {$Think.server.script_name} 
         {$Think.const.MODULE_NAME}
         {9+1}
+        <input id="name" placeholder="please fill out">
     </div>
-   
+    <script type="text/javascript" src={$script}></script>
+    <script type="text/javascript">
+         $("#name").val("fuck");
+    </script>
 </body>
 </html>

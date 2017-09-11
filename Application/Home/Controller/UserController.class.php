@@ -25,12 +25,13 @@ class UserController extends Controller{
 
 	//管理员登录
 	public function loginAction($phone=1000,$pwd='pwd'){
-		
+		/*
 		if($phone==1000||$pwd=='pwd'){
 			$array["code"] = 0;
 	        $array["res"] = "账号密码错误";
 	        $this->ajaxReturn($array);
 		}
+		*/
 		
 		$User = D("User");
 		$user= $User->queryUser($phone);
@@ -57,7 +58,6 @@ class UserController extends Controller{
 
 		$user = $user["0"];
 
-		
 		
 
 		$this->ajaxReturn($user);
