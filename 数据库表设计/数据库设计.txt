@@ -1,0 +1,246 @@
+//创建数据库
+create database jp
+CHARACTER SET 'utf8'  
+COLLATE 'utf8_general_ci';  
+
+create table j_article_info(
+    article_Id bigint primary key,
+    article_Title char(64) default '',
+    article_Author_id bigint default 0 ,
+    article_Author_Name char(24) default '',
+    article_Keywords char(48) default '',
+    article_Descriptions char(64) default '',
+    article_List_Img1 char(64) default '',
+    article_List_Img2 char(64) default '',
+    article_List_Img3 char(64) default '',
+    article_Content_Url char(64) default '',
+    article_Content TEXT default '',
+    article_Query_Key1 char(24) default'',
+    article_Query_Key2 char(24) default'',
+    article_Query_Key3 char(24) default'',
+    article_Vice_Title char(48) default'',
+    article_Scan int default 0,
+    article_Like int default 0,
+    article_Dislike int default 0,
+    articel_Comments int default 0,
+    article_Auto_Load_Js char(128) default '',
+    article_Auto_load_Html_Module char(128) default '',
+    article_State int default 0,
+    article_Collect int default 0,
+    article_Manager_Adver_Img char(128) default '',
+    article_Manager_Adver_Jump_Url text default '',
+    article_Related_Taobao char(128) default '',
+    article_Share_Times int default 0,
+    article_Share_Author_info int default 0,
+    article_Short_Video_Url char(128) default '',
+    article_Author_Info_Open int default 0,
+    article_Is_Open int default 0,
+    article_Scan_Marks int default 0,
+    article_Class int default 0,
+    article_Class_Name char(16) default 0,
+    article_Individual_Series int default 0,
+    article_Individual_Series_Name char(32) default '',
+    article_Forbidden_Reason char(32) default '',
+    article_Is_Original int default 0,
+    article_Source_From char(16) default '',
+    article_Stars int default 0,
+    article_Share int default 0,
+    article_Is_Country int default 0,
+    article_Province bigint default 0,
+    article_City bigint default 0,
+    article_County bigint default 0,
+    article_Recommend_Notes text default '',
+    article_Recommend_Title char(48) default '',
+    artitle_Related_url char(128) default '',
+    article_CanBe_Comment int default 0,
+    article_Auditor_Id bigint default 0,
+    artilce_Group_Id  bigint default 0,
+    artilce_Group_Name  char(64) default '',
+    article_Abstract text default '',
+    artilcetype1 char(16) default '',
+    artilcetype2 char(16) default '',
+    artilcetype3 char(16) default '',
+    article_Public_Channel int default 0
+    
+        
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+//增加普通索引
+//给作者id新增普通索引
+ALTER  TABLE  'j_article_info' ADD  INDEX j_article_info_author_id( 'article_Author_id'  );
+
+//文章评论表
+create table j_article_comment_info(
+	user_Id bigint default 0,
+	article_Id bigint default 0,
+	comment_Id bigint default 0,
+	comment_Time bigint default 0,
+	comment_Related_Id bigint default 0,
+	comment_State int default 0,
+	comment_Content char(232) default ''
+		
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+//系统文章分类
+create table j_article_type_info(
+    article_Type_Id int default 0,
+    article_Type_Name char(24) default ''
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+//作者自己文章系列表
+create table j_article_group(
+    group_Id bigint default 0,
+    group_Name char(36) default '',
+    user_Id bigint default 0
+    
+	
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+//文章模板表
+create table j_article_html_module_info(
+	html_Module_Id int default 0,
+	html_Module_Preview_Imgurl char(128) default '',
+	html_Module_Source_Url char(128),
+	html_Module_Support_Js_Url char(128) default ''
+	
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+//用户表
+create table j_user_info(
+	user_Name char(24) default '',
+	user_Id bigint default 0,
+	user_Phone bigint primary key default 0 ,
+	user_Origin_Pwd char(16) default '',
+	user_Pwd char(64) default '',
+	user_Nick char(32) default '',
+	user_State int default 0, 
+	last_Login_Time bigint default 0,
+	user_Img char(32) default '',
+	user_wx char(32) default '',
+	user_qq bigint  default 0,
+	user_id_code char(32) default '',
+	user_id_code_pic1 char(32) default '',
+	user_id_code_pic2 char(32) default '',
+	user_realname int default 0,
+	user_open_img1 char(128) default '',
+	user_open_img2 char(128) default '',
+	user_open_img3 char(128) default '',
+	user_open_img4 char(128) default '',
+	user_open_img5 char(128) default ''
+	
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+insert into j_user_info values ('刘洪',1506684423,15118067319,'123456','sdfsfsz','allen',1,1506684816,'','1511512514allen',2898364264,'430923199105041736','','',0,'','','','','');
+
+文章举报表
+create table j_article_tip_info(
+	article_tip_Id bigint default 0,
+	article_Id bigint default 0,
+	user_Id bigint default 0,
+	tip_State int default 0,
+	tip_Reason char(64) default '',
+	tip_Results char(64) default ''
+	
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+//图片信息表
+create table j_image_info(
+   user_id bigint default 0, 
+   image_id bigint default 0, 
+   image_location char(64) default '',
+   image_type int default 0
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+//图片中心信息表
+create table j_imagecenter_info(
+   image_Id bigint default 0, 
+   image_State int default 0, 
+   image_location char(64) default '',
+   image_Appkey char(64) default '',
+   image_Url char(64) default '',
+   image_Type int default 0
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+//用户日记信息表
+create table j_userdiary_info(
+	diary_Id bigint primary key default 0,
+	user_Id bigint default 0,
+	diary_Pictures bigint default 0,
+	diary_Video char(64) default '',
+	diary_State int default 0,
+	diary_Like bigint default 0,
+	diary_DisLike bigint default 0,
+	diary_Comments int default 0,
+	diary_Canbe_Comments int default 0
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+//日记图片信息表
+create table j_diarypic_info(
+	diary_Id bigint default 0,
+	pic_Id bigint default 0,
+	pic_Url char(64) default '',
+	pic_PrefixUrl char(64) default ''
+	
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -19,6 +19,9 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG', true);
 
+//nginx环境下防止U方法输出错误
+define('__APP__', '');
+
 // 定义应用目录(项目路径)
 define('APP_PATH', './Application/');
 //自己注释：

@@ -1,0 +1,139 @@
+.box-wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.header{
+	width: 100%;
+	min-height: 2rem;
+	padding: 0.25rem 0.6rem;
+	font-size: 0.5rem;
+}
+
+.header .title{
+	padding: 0.15rem 0;
+	font-size: 0.6rem;
+	color: #333;
+	line-height: 0.8rem;
+	text-align: center;
+}
+
+.title-label{
+	position: relative;
+	width: 100%;
+	padding: 0.25rem;
+	height: 2rem;
+	line-height: 2rem;
+}
+
+.title-label .focus{
+	padding: 0.15rem 0.4rem;
+	border: 1px solid #55d30d;
+	color: #fff;
+	background: #55d30d;
+	border-radius: 0.1rem;
+}
+
+.title-label .author-img{
+	display: inline-block;
+	position: relative;
+	float: right;
+	width: 2rem;
+	height: 2rem;
+}
+
+
+.title-label .author-img img{
+	
+	width: 2rem;
+	height: 2rem;
+	border-radius: 2rem;
+}
+
+.title-label .author-img .focus-author{
+	position: absolute;
+	top: 0rem;
+	left: -3rem;
+	display: inline-block;
+	
+
+}
+
+.title-desc {
+	font-size: 0.4rem;
+	color: #333;
+}
+
+.title-desc span{
+	padding: 0 0.2rem;
+}
+
+.activered{
+	color: red;
+}
+
+.content-area{
+	position: relative;
+	margin-top: 0.5rem;
+	min-height: 2rem;
+	padding: 0.8rem 0.25rem;
+}
+.content-area img{
+	max-width:100%
+}
+.article-claim{
+	text-align: center;
+	font-size: 0.4rem;
+	padding: 0.2rem;
+	color: #818181;
+}
+.article-data{
+	padding: 0.2rem 0.5rem;
+	font-size: 0.4rem;
+	color: #333;
+}
+.article-data span{
+	padding: 0 0.3rem;
+}
+
+.author-area{
+	padding: 0.4rem;
+	padding-top: 0.5rem;
+	
+}
+
+.author-claim{
+	font-size: 0.4rem;
+
+}
+
+.author-img-wrap{
+	margin-top: 0.3rem;
+}
+
+.author-img-wrap ul{
+	height: 2.25rem;
+	overflow: hidden;
+}
+.author-img-wrap li{
+	float: left;
+	display: inline-block;
+	width: 3.2rem;
+	height: 2.15rem;
+	margin: 0.1rem;
+} 
+
+.author-open-info{
+	margin-top: 0.2rem;
+	font-size: 0.45rem;
+	color: #333;
+}
+
+.animate-area{
+	width: 100%;
+	height: 8rem;
+	margin-top: 0.5rem;
+	background: #818181;
+}

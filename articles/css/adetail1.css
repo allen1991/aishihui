@@ -1,0 +1,305 @@
+.box-wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.header{
+	width: 100%;
+	min-height: 2rem;
+	padding: 0.25rem 0.6rem;
+	font-size: 0.5rem;
+}
+
+.header .title{
+	padding: 0.15rem 0;
+	font-size: 0.75rem;
+	color: #333;
+	line-height: 0.85rem;
+	text-align: center;
+}
+
+.title-label{
+	position: relative;
+	width: 100%;
+	padding: 0.25rem;
+	height: 2rem;
+	line-height: 2rem;
+}
+
+.title-label .focus{
+	padding: 0.15rem 0.4rem;
+	border: 1px solid #55d30d;
+	color: #fff;
+	background: #55d30d;
+	border-radius: 0.1rem;
+}
+
+.title-label .author-img{
+	display: inline-block;
+	position: relative;
+	float: right;
+	width: 2rem;
+	height: 2rem;
+}
+
+
+.title-label .author-img img{
+	
+	width: 2rem;
+	height: 2rem;
+	border-radius: 2rem;
+}
+
+.title-label .author-img .focus-author{
+	position: absolute;
+	top: 0rem;
+	left: -3rem;
+	display: inline-block;
+	
+
+}
+
+.title-desc {
+	font-size: 0.4rem;
+	color: #333;
+	margin-top: 0.2rem;
+}
+
+.title-desc span{
+	padding: 0 0.2rem;
+}
+
+.activered{
+	color: red;
+}
+
+.content-area{
+	position: relative;
+	margin-top: 0.5rem;
+	min-height: 2rem;
+	padding: 0.8rem 0.25rem;
+}
+
+.article-claim{
+	text-align: center;
+	font-size: 0.4rem;
+	padding: 0.2rem;
+	color: #818181;
+}
+.article-data{
+	padding: 0.2rem 0.5rem;
+	font-size: 0.4rem;
+	color: #333;
+}
+.article-data span{
+	padding: 0 0.3rem;
+}
+
+.author-area{
+	padding: 0.4rem;
+	padding-top: 0.5rem;
+	
+}
+
+.author-claim{
+	font-size: 0.4rem;
+
+}
+
+.author-img-wrap{
+	margin-top: 0.3rem;
+}
+
+.author-img-wrap ul{
+	height: 2.25rem;
+	overflow: hidden;
+}
+.author-img-wrap li{
+	float: left;
+	display: inline-block;
+	width: 3.2rem;
+	height: 2.15rem;
+	margin: 0.1rem;
+} 
+
+.author-open-info{
+	margin-top: 0.2rem;
+	font-size: 0.45rem;
+	color: #333;
+}
+
+.related-news{
+	position: relative;
+	width: 100%;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.related-news .title{
+	font-size: 0.5rem;
+	margin: 0.2rem 0rem;
+}
+.related-news .news{
+	position: relative;
+	width: 100%;
+	height: 5rem;
+	border-bottom: 1px solid #e6e2e2;
+}
+.related-news .news .img{
+	position: relative;
+	display: inline-block;
+	margin: 0.2rem 0;
+	width: 4.3rem;
+	height: 4.3rem;
+}
+.related-news .news .intro{
+	position: relative;
+	display: inline-block;
+	width: 10rem;
+	height: 5rem;
+	vertical-align: top;
+}
+.related-news .news .intro .news-title{
+	position: relative;
+	font-size: 0.7rem;
+	margin-left: 0.5rem;
+	margin-top: 0.2rem;
+}
+.related-news .news .intro .news-info{
+	position: relative;
+	font-size: 0.5rem;
+	margin-left: 0.5rem;
+	margin-top: 0.2rem;
+}
+.adver-area{
+	width: 100%;
+	min-height: 8rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}  
+.adver-area .adver-type-0{
+	width: 100%;
+	height: 8rem;
+	margin-top: 0.5rem;
+	background: #818181;
+}
+.adver-area .adver-type-1{
+	position: relative;
+	width: 100%;
+	margin-top: 0.2rem;
+}
+.adver-area .adver-type-2{
+	position: relative;
+	width: 100%;
+	margin-top: 0.2rem;
+}
+.adver-area .adver-type-3{
+	position: relative;
+	width: 100%;
+	margin-top: 0.2rem;
+}
+
+.adver-area .adver-type-1 .type-1-item{
+	position: relative;
+	width: 100%;
+}
+.adver-area .adver-type-1 .type-1-title{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+.adver-area .adver-type-1 .type-1-item .item-img-wrap{
+	position: relative;
+	width: 100%;
+	height: 8rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	border-radius: 0.2rem;
+	opacity: 0.9;
+}
+
+.adver-area .adver-type-1 .type-1-item .item-type1-desc{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	
+}
+
+.adver-area .adver-type-1 .type-1-item .item-img-wrap  img {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+    border-radius: 0.5rem;
+}
+.adver-area .adver-type-1 .type-1-item .item-type1-desc .desc-main{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	width: 90%;
+	text-align: center;
+	font-size: 0.9rem;
+	margin-top: 1.5rem;
+	padding-top: 0.5rem;
+	border-top: 2px solid #fff;
+}
+.adver-area .adver-type-1 .type-1-item .item-type1-desc .desc-vice{
+	position: relative;
+	color: #fff;
+	display: inline-block;
+	width: 90%;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.8rem;
+	border-top: 2px solid #fff;
+}
+
+.adver-type-2 .adver-2-title{
+	position: relative;
+	font-size: 1rem;
+	color: #000;
+	background: #fff;
+	text-align: center;
+	padding: 0.3rem;
+	font-weight: bold;
+}
+.adver-type-2 .adver-2-word{
+	position: relative;
+	font-size: 0.8rem;
+	color: #000;
+	background: #fff;
+	padding: 0.3rem;
+	font-weight: bold;
+}
+
+.adver-type-2  .adver-2-content{
+	position: relative;
+	font-size: 0.6rem;
+	color: #000;
+	background: #fff;
+	padding: 0.05rem;
+	max-height: 600px;
+	margin-bottom: 5rem;
+}
+.adver-type-3 .adver-3-title{
+	position: relative;
+	font-size: 1rem;
+	color: #000;
+	background: #fff;
+	text-align: center;
+	padding: 0.3rem;
+	font-weight: bold;
+}
+.adver-type-3  .adver-3-content{
+	position: relative;
+	color: #000;
+	background: #fff;
+	margin-bottom: 5rem;
+}

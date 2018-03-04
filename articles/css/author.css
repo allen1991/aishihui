@@ -1,0 +1,126 @@
+.box-wrap{
+	position: relative;
+	width: 100%;
+	
+	background: #f4f4f4;
+	margin-bottom: 3rem;
+}
+
+
+.header{
+	position: relative;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.8rem;
+	background: #fff;
+}
+
+.author-img{
+	position: relative;
+	height: 3rem;
+	
+	text-align: center;
+}
+
+.author-img img{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 3rem;
+}
+.author-name{
+	text-align: center;
+	font-size: 0.5rem;
+	margin:0.1rem;
+}
+
+.author-info{
+	padding: 0.2rem;
+}
+
+.author-info{
+	text-align: center;
+	font-size: 0.5rem;
+}
+.author-focus{
+	text-align: center;
+	font-size: 0.5rem;
+	color: #fff;
+	margin-top: 0.2rem;
+}
+.author-focus span{
+	padding: 0.25rem 0.4rem;
+	background: #55d30d;
+	border-radius: 0.2rem;
+}
+
+.content{
+	margin: 0.5rem;
+	margin-top: 0.8rem;
+	font-size: 0.48rem;
+}
+
+.content .intro{
+
+}
+
+.content .intro-list{
+	margin-top: 0.2rem;
+
+}
+
+.content .intro-item{
+	position: relative;
+	display: inline-block;
+	width: 3.4rem;
+	height: 3.4rem;
+	margin: 0.1rem;
+}
+.content .intro-item img{
+	width: 3.4rem;
+	height: 3.4rem;
+}
+
+.intro-item-more{
+	display: inline-block;
+	width: 3.4rem;
+	height: 3.4rem;
+	border: 1px solid #dddddd;
+	color: red;
+	border-radius: 0.1rem;
+	line-height: 3.4rem;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+.content-area{
+	margin-top: 0.5rem;
+}
+.activered{
+	color: red;
+}
+
+.full-screen{
+	top: 0rem;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	/*background: #f0f0f0;*/
+	z-index: 1000;
+}
+
+.single-img{
+	height: 10rem;
+	width: 100%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+}
+
+.single-img img{
+	width: 100%;
+	height: 100%;
+	
+}

@@ -14,26 +14,28 @@ class UserModel extends Model{
 	protected $tableName = "user_info";
 	protected $trueTableName = 'j_user_info'; 
 	protected $_map = array(
-        'userid' =>'j_user_id', 
-        'userphone'  =>'j_user_phone', 
-        'userstate' =>'j_user_state',
+        'userid' =>'user_id', 
+        'userphone'  =>'user_phone', 
+        'userstate' =>'user_state',
     );
+
+    
 	//数据库表字段(这里写了字段之后就可以不依赖字段缓存，可以减少io加载开销)
 	//protected $fields = array("id");
 	//查询数据库
 	public function queryUser($phone,$pwd){
 		
-		$map["j_user_phone"] = $phone;
+		$map["user_phone"] = $phone;
 		
-		return $this->where($map)->select();
-		
+		return $this->field("user_id,user_phone,user_state")->where($map)->select();
 	}
-
+	
 	//获取用户状态与权限，通过用户id
 	public function getUserStateAndLimit($userid){
 		$map["j_user_id"] = $userid;
-		return $this->field("j_user_phone,j_user_state,j_user_id")->where($map)->select();
+		return $this->field("user_phone,user_state,user_id")->where($map)->select();
 	}
+	
 
 }
 
